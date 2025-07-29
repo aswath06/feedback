@@ -67,7 +67,6 @@ body{
   padding: 20px 15px;
   overflow: hidden;
 }
-
 .envelope > .letter > .text {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: var(--txt-color);
@@ -87,15 +86,6 @@ body{
   box-shadow: 0 1px 6px var(--shadow-color);
   cursor: pointer;
 }
-/* .heart:before, 
-.heart:after {
-  content: "";
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  background-color: var(--heart-color);
-  border-radius: 50%;
-} */
  .heart:before,
 .heart:after {
   display: none;
@@ -118,4 +108,10 @@ body{
 .flap > .heart {
   transform: rotate(90deg);
   transition-delay: 0.4s;
+}
+.flap .envelope::before,
+.flap .envelope::after {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
