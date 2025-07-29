@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+    <strong>Dear Butterfly,</strong>
+    <p>
+        I just wanted to take a moment to express my heartfelt thanks for your incredible teaching. 
+        Your guidance through both the basics and advanced concepts of Java has made a huge difference 
+        in my understanding and confidence. The way you explain complex topics with such clarity and 
+        patience is truly inspiring. I feel more capable and motivated to continue learning because of you.
+        <br><br>
+        Thank you for being such a wonderful mentor. 🌸 
+    </p>
+</div>
+
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
